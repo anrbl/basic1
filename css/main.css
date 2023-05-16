@@ -6,7 +6,6 @@ body {
     max-width: 1200px;
     width: calc(100% - 50px);
     margin: 30px auto;
-    padding: 0 0 0 18px;
 }
 
 h1 {
@@ -53,6 +52,5 @@ h2 {
 
 .footer .text {
     text-align: right;
-    padding-right: 18px;
     color: #666;
 }
