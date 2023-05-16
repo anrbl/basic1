@@ -1,0 +1,141 @@
+h1 {
+    margin: 50px;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+}
+
+h2 {
+    margin: 50px 0 20px 0;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+    background: #f9f9f9;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+
+    border: 1px solid #ff0000;
+    background: #c7ebc7;
+}
+
+.itm {
+    background: #666;
+    text-align: center;
+    color: #fff;
+}
+
+/* 기본배치 */
+.case01 {
+    display: flex;
+    gap: 30px;
+}
+
+/* 양끝으로 배치01 */
+.case02 {
+    display: flex;
+    justify-content: space-between;
+    /* flex의 방향에 따라서 justify-content의 방향도 달라진다. */
+}
+
+/* 양끝으로 배치02 */
+.case03 {
+    display: flex;
+}
+
+.case03 .right {
+    margin: 0 0 0 auto;
+}
+
+.case03 .right2 {
+    margin: 0 0 0 100px;
+}
+
+
+/* 실습 예시2 */
+.top_bar {
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    /* border의 선 크기를 포함하여 top+bar의 높이 측정*/
+}
+
+.top_bar .inner {
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+    line-height: 30px;
+}
+
+.top_bar .customer {
+    display: flex;
+    margin: 0 0 0 auto;
+}
+
+.top_bar .customer li {
+    padding: 0 10px;
+    border-right: 1px solid #ddd;
+}
+
+/* 특정 색상으로 선, 배경 등을 지정했다면 이후는 통일하는 것이 좋다. */
+
+
+
+
+
+
+/* 실습 예시 */
+#header {
+    display: flex;
+    align-items: center;
+    height: 100px;
+    /*  높이는 안 쓰는 것이 원칙 */
+}
+
+#header .inner {
+    display: flex;
+    align-items: center;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/* 최상단의 h1으로 인해 해당 h1을 별도의 선택자로 잡았다 */
+#header h1 {
+    text-align: left;
+    margin: 0;
+}
+
+#header .gnb {
+    margin: 0 0 0 auto;
+}
+
+#header .gnb>ul {
+    display: flex;
+    gap: 40px;
+}
+
+#header .gnb>ul>li {
+    position: relative;
+}
+
+#header .gnb>ul>li~li::before {
+    content: "";
+    position: absolute;
+    left: -20px;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 1px;
+    height: 12px;
+    background: #ddd;
+}
+
+/* #header .gnb>ul>li:first-child::before {display:none;} .gnb>ul>li~li::before로 작성 가능... li~li는 제일 앞의 자신을 제외한 형제 선택자들을 지칭함 > 2번째 형제를 선택하고 싶을 시에는  2번째 형제에게 클래스명을 붙여 수정 */
+
+
+#header .right {
+    margin: 0 0 0 50px;
+    color: #ff0000;
+    font-size: 30px;
+    font-weight: 700;
+}
