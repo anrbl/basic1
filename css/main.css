@@ -18,7 +18,7 @@ h2 {
 }
 
 .inner {
-    width: 1200px;
+    max-width: 1200px;
     margin: 100px auto;
     padding: 20px;
     background: #fff;
@@ -34,7 +34,7 @@ h2 {
     font-size: 15px;
     font-weight: 500;
     color: #fff;
-    padding: 6px;
+    padding: 6px 10px;
     background: #808000;
     border-radius: 10px;
 }
