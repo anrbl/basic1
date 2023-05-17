@@ -5,49 +5,53 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>flex</title>
+    <title>float</title>
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/font.css">
-    <link rel="stylesheet" href="../css/layout01.css">
+    <link rel="stylesheet" href="../css/layout02.css">
 </head>
 
 <body>
-    <h1 class="tit">요소의 가로배치 flex <i class="xi-close"></i></h1>
+    <h1 class="tit">float : 요소를 가로배치하는 옛날 방법</h1>
 
-    <!-- flex : 가로배치 기본 스트레치된다 -->
-    <h2>Case 01- 가로배치 기본
-    </h2>
-    <div class="container case01">
+    <!-- 01 -->
+    <h2>case01 - float 기본 가로배치</h2>
+    <div class="case01 container clearfix">
+        <div class="itm">01</div>
+        <div class="itm">02</div>
+        <!-- <p style="clear: both;"></p>  html에서 float 가라앉히는 법-->
+    </div>
+
+    <!-- 02 -->
+    <h2>case02 - float 우측 배치</h2>
+    <div class="case02 container clearfix">
         <div class="itm">01</div>
         <div class="itm">02</div>
     </div>
 
-    <!-- flex : 양끝으로 배치01 -->
-    <h2>Case 02- 양끝으로 배치01</h2>
-    <div class="container case02">
+    <!-- 03 -->
+    <h2>case03 - float 중앙 배치</h2>
+    <div class="case03 container">
         <div class="itm">01</div>
         <div class="itm">02</div>
     </div>
 
-    <!-- flex : 양끝으로 배치02 -->
-    <h2>Case 03- 양끝으로 배치02</h2>
-    <div class="container case03">
-        <div class="itm">01</div>
-        <div class="itm right">02</div>
-        <div class="itm right2">03</div>
-    </div>
-
-    <h2>Case 04- 가운데 배치</h2>
-    <div class="container case04">
-        <div class="itm">01</div>
-        <div class="itm right">02</div>
-        <div class="itm right2">03</div>
+    <!-- 04 -->
+    <h2 class="stitle">case04 - float 양끝 배치<i class="xi-arrow-right"></i></h2>
+    <div class="case04 container clearfix">
+        <div class="itm left">01</div>
+        <div class="right">
+            <div class="itm">02</div>
+            <div class="itm s">03</div>
+        </div>
     </div>
 
 
+    <!-- 실습 예제1 -->
     <h2>실습 예시</h2>
+
     <div class="top_bar">
-        <div class="inner">
+        <div class="inner clearfix">
             <div class="slogan">Lorem ipsum dolor sit amet consectetur</div>
             <ul class="customer">
                 <li>QNA</li>
@@ -56,21 +60,24 @@
             </ul>
         </div>
     </div>
+
     <header id="header">
-        <div class="inner">
+        <div class="inner clearfix">
             <h1>LOGO</h1>
-            <nav class="gnb">
-                <!-- gnb: 글로벌 네비게이션 바 / nav 태그 중요 / 안에 들어가는 nav는 lnb : 로컬 네비게이션 바 -->
-                <ul>
-                    <li><a href="#">menu01</a></li>
-                    <li><a href="#">menu02</a></li>
-                    <li><a href="#">menu03</a></li>
-                    <li><a href="#">menu04</a></li>
-                </ul>
-            </nav>
-            <div class="right">TEL.1336</div>
+            <div class="service">
+                <nav class="gnb">
+                    <ul>
+                        <li><a href="#">menu01</a></li>
+                        <li><a href="#">menu02</a></li>
+                        <li><a href="#">menu03</a></li>
+                        <li><a href="#">menu04</a></li>
+                    </ul>
+                </nav>
+                <div class="right">TEL.1336</div>
+            </div>
         </div>
     </header>
+
 
     <!-- 실습예제2 이미지 나열 -->
     <section id="event">

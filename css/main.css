@@ -14,15 +14,24 @@ h1 {
 }
 
 h2 {
-    color: #666;
+    font-weight: 500;
+    color: #808000;
+}
+
+h3 {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 15px;
+    color: #808000;
 }
 
 .inner {
     max-width: 1200px;
     width: calc(100% - 50px);
-    margin: 0 auto;
+    margin: 15px auto;
     padding: 20px;
     background: #fff;
+    border: 1px dashed #000;
 }
 
 .list li {
@@ -35,7 +44,7 @@ h2 {
     font-size: 15px;
     font-weight: 500;
     color: #fff;
-    padding: 6px 10px;
+    padding: 6px 10px 5px 10px;
     background: #808000;
     border-radius: 10px;
 }
@@ -52,7 +61,7 @@ h2 {
 
 .footer p {
     text-align: right;
-    font-size:15px;
-    font-weight:300;
+    font-size: 15px;
+    font-weight: 300;
     color: #666;
 }
