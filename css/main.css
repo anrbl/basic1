@@ -1,5 +1,6 @@
 body {
-    background: #dfe7c9;
+    background: #80800011;
+    color: #444;
 }
 
 .header {
@@ -31,8 +32,9 @@ h3 {
     margin: 15px auto;
     padding: 20px;
     background: #fff;
-    border: 1px dashed #000;
+    border: 1px dashed #444;
 }
+
 
 .list li {
     padding: 5px 0;
@@ -63,5 +65,5 @@ h3 {
     text-align: right;
     font-size: 15px;
     font-weight: 300;
-    color: #666;
+    color: #444;
 }

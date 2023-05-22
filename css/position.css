@@ -1,0 +1,51 @@
+.popup {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #808000;
+
+    width: 300px;
+    box-shadow: 0 1px 5px rgb(0, 0, 0, 0.3);
+    z-index: 2;
+}
+
+.popup2 {
+    position: absolute;
+    top: 65%;
+    left: 65%;
+    transform: translate(-50%, -50%);
+    background: #808000;
+
+    width: 300px;
+    box-shadow: 0 1px 5px rgb(0, 0, 0, 0.3);
+    z-index: 1;
+}
+
+.popup3 {
+    position: absolute;
+    top: 80%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    background: #808000;
+
+    width: 300px;
+    box-shadow: 0 1px 5px rgb(0, 0, 0, 0.3);
+}
+
+
+img {
+    width: 100%;
+    vertical-align: middle;
+}
+
+.btn {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    z-index: 30;
+}
+
+.gongal {
+    color: #444
+}

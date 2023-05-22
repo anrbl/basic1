@@ -1,0 +1,146 @@
+.inner {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* 상단바 */
+.top_banner {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #808000;
+}
+
+.top_banner .inner {
+    height: 150px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.top_banner.on .inner {
+    height: 0;
+}
+
+
+.top_banner .btn {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-100%, 100%);
+    margin: 0 0 0 600px;
+    background: #808000;
+    color: #fff;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.top_banner .btn::after {
+    content: '메뉴닫기';
+}
+
+.top_banner.on .btn::after {
+    content: '메뉴열기';
+}
+
+.top_banner.on .btn i {
+    transform: rotate(180deg);
+}
+
+
+
+
+/* 우측 배너 */
+.right_banner {
+    position: fixed;
+    top: 50%;
+    right: -300px;
+    width: 300px;
+    height: 400px;
+    background: #1280c9;
+    transition: 0.5s;
+}
+
+.right_banner.on {
+    right: 0;
+}
+
+.right_banner .btn {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-100%, 0);
+}
+
+.right_banner.on .btn i {
+    transform: rotate(180deg);
+    background: #0c2135;
+}
+
+.right_banner .btn i {
+    padding: 10px;
+    background: #1280c9;
+    color: #fff;
+    font-size: 20px;
+}
+
+
+
+/* 좌측 배너 */
+.left_banner {
+    position: fixed;
+    top: 20%;
+    left: -300px;
+    width: 300px;
+    height: 500px;
+    background: #9a65a1;
+    transition: 0.5s;
+}
+
+.left_banner.on {
+    left: 0;
+}
+
+
+.left_banner .btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(100%, 0);
+}
+
+.left_banner .btn i {
+    padding: 10px;
+    font-size: 20px;
+    background: #9a65a1;
+    color: #fff;
+}
+
+.left_banner.on .btn i {
+    transform: rotate(180deg);
+}
+
+.left_banner .cont {
+    margin: 20px 20px 20px 20px;
+    color: #fff;
+}
+
+.left_banner .cont strong {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.left_banner .cont p {
+    margin: 10px 0 20px 0;
+    font-weight: 300;
+    line-height: 1.2;
+}
+
+
+.left_banner .cont figure img {
+    width: 100%;
+}
+
+.left_banner img {
+    vertical-align: middle;
+}
