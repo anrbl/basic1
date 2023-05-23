@@ -20,10 +20,12 @@ h2 {
 }
 
 h3 {
+    position: relative;
+    padding: 0 0 0 25px;
     font-size: 20px;
     font-weight: 500;
     margin-bottom: 15px;
-    color: #808000;
+    color: #696960;
 }
 
 .inner {
@@ -33,6 +35,20 @@ h3 {
     padding: 20px;
     background: #fff;
     border: 1px dashed #444;
+}
+
+.inner h3::before {
+    content: "\e92e";
+    font-family: xeicon;
+    color: #808000;
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0 10px 0 0;
+
+
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 
