@@ -34,7 +34,7 @@ h3 {
     margin: 15px auto;
     padding: 20px;
     background: #fff;
-    border: 1px dashed #444;
+    border: 1px dashed #808000;
 }
 
 .inner h3::before {
@@ -63,7 +63,7 @@ h3 {
     font-weight: 500;
     color: #fff;
     padding: 6px 10px 5px 10px;
-    background: #808000;
+    background: #69692c;
     border-radius: 10px;
 }
 
@@ -82,4 +82,31 @@ h3 {
     font-size: 15px;
     font-weight: 300;
     color: #444;
+}
+
+
+
+
+hr {
+    position: relative;
+    border: none;
+    border-top: 1px solid #b8b85b;
+    overflow: visible;
+}
+
+hr::before {
+    content: "\e9e1";
+    font-family: xeicon;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(0, -50%);
+    margin: 0 0 0 600px;
+
+    padding: 10px;
+    font-size: 20px;
+    color: #69692c;
+    border: 1px solid #b8b85b;
+    border-radius: 50%;
+    background: #fff;
 }

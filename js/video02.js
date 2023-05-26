@@ -17,7 +17,7 @@ $(function () {
 
 
     $('#conVideo1').YTPlayer({
-        videoURL: 'https://youtu.be/qMLQNiPWW7o',
+        videoURL: 'DsZhTIwJV5E',
         containment: '#bgm1',
         autoPlay: true,
         mute: true,
@@ -27,7 +27,7 @@ $(function () {
     });
 
     $('#conVideo2').YTPlayer({
-        videoURL: 'https://youtu.be/qMLQNiPWW7o',
+        videoURL: 'DsZhTIwJV5E',
         containment: '#bgm2',
         autoPlay: true,
         mute: true,
@@ -37,7 +37,7 @@ $(function () {
     });
 
     $('#conVideo3').YTPlayer({
-        videoURL: 'https://youtu.be/qMLQNiPWW7o',
+        videoURL: 'DsZhTIwJV5E',
         containment: '#bgm3',
         autoPlay: true,
         mute: true,
