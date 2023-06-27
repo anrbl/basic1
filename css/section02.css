@@ -1,0 +1,91 @@
+body {
+    color: #444;
+    line-height: 1;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.section {
+    padding: 100px 0;
+}
+
+.section .tit {
+    max-width: 1200px;
+    margin: 0 auto 50px auto;
+    padding: 0 15px;
+}
+
+.section .tit h2 {
+    font-size: 30px;
+    font-weight: 700;
+    margin: 0 0 10px 0;
+}
+
+.section .tit p {
+    font-size: 15px;
+    font-weight: 300;
+}
+
+#header {
+    border-bottom: 1px solid #ddd;
+}
+
+#header .inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+
+#header .gnb>ul {
+    display: flex;
+    gap: 40px;
+}
+
+#mainContent .inner {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#mainContent .inner figure {
+    flex: 1 0 50%;
+}
+
+/* @media (max-width:768px) {
+    #mainContent .inner {
+        flex-direction: column;
+    }
+
+    #mainContent .inner figure:nth-child(2) {
+        order: -1;
+    }
+} */
+
+#mainContent .inner figure:nth-child(2),
+#mainContent2 .inner figure:nth-child(2),
+#mainContent3 .inner figure:nth-child(2) {
+    border: 1px solid tomato;
+}
+
+#mainContent2 .inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* 미디어쿼리 사용하지 않고 반응형 호환가능한 코드 
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));*/
+}
+
+#mainContent3 .inner figure {
+    float: left;
+    width: 50%;
+    height: 272px;
+}

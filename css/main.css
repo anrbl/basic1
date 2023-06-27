@@ -15,29 +15,50 @@ h1 {
 }
 
 h2 {
-    font-weight: 500;
-    color: #808000;
-}
-
-h3 {
     position: relative;
     padding: 0 0 0 25px;
     font-size: 20px;
     font-weight: 500;
-    margin-bottom: 15px;
+    margin: 0 0 20px 0;
     color: #696960;
 }
+
+h3 {
+    position: relative;
+    font-size: 16px;
+    line-height: 20px;
+    margin: 0 0 10px 0;
+    z-index: 10;
+}
+
+h3::before {
+    content: "";
+    position: absolute;
+    bottom: 3px;
+    left: 0;
+    width: 20%;
+    height: 8px;
+
+    z-index: -1;
+    background: #b8b85b3d;
+}
+
+span {
+    font-weight: 500;
+    color: #808000;
+}
+
 
 .inner {
     max-width: 1200px;
     width: calc(100% - 50px);
     margin: 15px auto;
-    padding: 20px;
+    padding: 25px;
     background: #fff;
     border: 1px dashed #808000;
 }
 
-.inner h3::before {
+.inner h2::before {
     content: "\e92e";
     font-family: xeicon;
     color: #808000;
@@ -54,7 +75,10 @@ h3 {
 
 .list li {
     padding: 5px 0;
-    border-bottom: 1px dashed #ddd;
+}
+
+.list li~li {
+    border-top: 1px dashed #ddd;
 }
 
 .list strong {
@@ -69,6 +93,10 @@ h3 {
 
 .list a {
     padding: 0 0 0 5px;
+}
+
+.list01 {
+    margin: 0 0 20px 0;
 }
 
 .footer {
