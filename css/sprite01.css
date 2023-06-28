@@ -1,0 +1,89 @@
+.mainVisual {
+    height: calc(100vh - 200px);
+    background: url(../images/mainvisual01.jpg) no-repeat center center/cover;
+}
+
+
+
+.mainVisual .bh {
+
+    width: 100px;
+    height: 100px;
+    background: url(../images/icon_set_w.png);
+    transition: 0.5s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.mainLink .lnk {
+    display: flex;
+    align-items: flex-end;
+    height: 200px;
+
+    margin: -115px auto 0 auto;
+}
+
+.mainLink .lnk li {
+    flex: 1;
+    background: #ddd;
+    height: 170px;
+    transition: 0.5s;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainLink .lnk li:not(.customer):hover {
+    height: 200px;
+}
+
+.mainLink .lnk li.customer {
+    flex: 2;
+}
+
+.mainLink .lnk li a {
+    width: 100px;
+    height: 100px;
+}
+
+.mainLink .lnk li:first-child {
+    background: #EB7978;
+}
+
+.mainLink .lnk li:first-child a {
+    background: url(../images/icon_set_w.png) 0 0;
+}
+
+.mainLink .lnk li:nth-child(2) {
+    background: #55cfbf;
+}
+
+.mainLink .lnk li:nth-child(2) a {
+    background: url(../images/icon_set_w.png) -100px 0;
+}
+
+.mainLink .lnk li:nth-child(3) {
+    background: #EBA849;
+}
+
+.mainLink .lnk li:nth-child(3) a {
+    background: url(../images/icon_set_w.png) -200px 0;
+}
+
+.mainLink .lnk li:nth-child(4) {
+    background: #808000;
+}
+
+.mainLink .lnk li:nth-child(4) a {
+    background: url(../images/icon_set_w.png) -300px 0;
+}
